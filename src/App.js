@@ -53,6 +53,10 @@ import GetAllPayments from './components/Payments/GetAllPayments';
 import GetPaymentByID from './components/Payments/GetPaymentByID';
 import UpdatePayment from './components/Payments/UpdatePayment';
 
+import DeleteTables from './components/Tables/DeleteTables';
+import CreateTables from './components/Tables/CreateTables';
+import PopulateTables from './components/Tables/PopulateTables';
+
 const App = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -65,6 +69,14 @@ const App = () => {
   };
 
   const categories = [
+    {
+      label: 'Tables',
+      items: [
+        { label: 'Drop Tables', path: '/tables/delete-tables' },
+        { label: 'Create Tables', path: '/tables/create-tables' },
+        { label: 'Populate Tables', path: '/tables/populate-tables' },
+      ],
+    },
     {
       label: 'Tourist',
       items: [
@@ -191,6 +203,13 @@ const App = () => {
 const getComponentForPath = (path) => {
   // Return the appropriate component for the given path
   switch (path) {
+    case '/tables/delete-tables':
+      return <DeleteTables />;
+    case '/tables/create-tables':
+      return <CreateTables />;
+    case '/tables/populate-tables':
+      return <PopulateTables />;
+
     case '/tourist/create-tourist':
       return <CreateTourist />;
     case '/tourist/delete-tourist':
