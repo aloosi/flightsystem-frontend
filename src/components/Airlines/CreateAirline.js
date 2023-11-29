@@ -12,7 +12,7 @@ const CreateAirline = () => {
     try {
       console.log('Form Data:', formData); // Log the formData
   
-      const response = await fetch('http://3.134.76.216:8080/create-airline', {
+      const response = await fetch('https://3.134.76.216:8080/create-airline', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

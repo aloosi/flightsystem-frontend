@@ -9,7 +9,7 @@ const PopulateTables = () => {
 
   const handlePopulateTables = async () => {
     try {
-        const response = await fetch('http://3.134.76.216:8080/populate-tables',{
+        const response = await fetch('https://3.134.76.216:8080/populate-tables',{
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',

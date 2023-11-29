@@ -18,7 +18,7 @@ const UpdateFlight = () => {
 
   const handleUpdateFlight = async () => {
     try {
-      const response = await fetch('http://3.134.76.216:8080/update-flight', {
+      const response = await fetch('https://3.134.76.216:8080/update-flight', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const DeleteReview = () => {
 
   const handleDeleteReview = async () => {
     try {
-      const response = await fetch('http://3.134.76.216:8080/delete-review/' + formData.review_id, {
+      const response = await fetch('https://3.134.76.216:8080/delete-review/' + formData.review_id, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

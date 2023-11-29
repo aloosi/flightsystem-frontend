@@ -14,7 +14,7 @@ const CreatePayment = () => {
     try {
       console.log('Form Data:', formData); // Log the formData
   
-      const response = await fetch('http://3.134.76.216:8080/create-payment-method', {
+      const response = await fetch('https://3.134.76.216:8080/create-payment-method', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

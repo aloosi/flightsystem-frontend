@@ -12,7 +12,7 @@ const UpdatePayment = () => {
 
   const handleUpdatePayment = async () => {
     try {
-      const response = await fetch('http://3.134.76.216:8080/update-payment-method', {
+      const response = await fetch('https://3.134.76.216:8080/update-payment-method', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

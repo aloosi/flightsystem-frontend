@@ -9,7 +9,7 @@ const GetAllTourists = () => {
 
   const handleGetAllTourists = async () => {
     try {
-      const response = await fetch('http://3.134.76.216:8080/get-all-tourists', {
+      const response = await fetch('https://3.134.76.216:8080/get-all-tourists', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

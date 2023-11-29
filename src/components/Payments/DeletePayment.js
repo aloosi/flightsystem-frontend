@@ -11,7 +11,7 @@ const DeletePayment = () => {
 
   const handleDeletePayment = async () => {
     try {
-      const response = await fetch('http://3.134.76.216:8080/delete-payment-method/' + formData.payment_id, {
+      const response = await fetch('https://3.134.76.216:8080/delete-payment-method/' + formData.payment_id, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
